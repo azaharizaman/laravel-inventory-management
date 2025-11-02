@@ -7,20 +7,20 @@ Keep this checklist updated as work lands in `main` so we can track the overall 
 
 ## 1. Repository Foundations
 - [x] Establish Composer package metadata and dependencies (`composer.json`)
-- [x] Configure local `path` repositories for `uom-management` and `serial-numbering`
-- [ ] Add base `README.md` with package overview, philosophy, and installation steps
+- [ ] Configure local `path` repositories for `uom-management` and `serial-numbering`
+- [x] Add base `README.md` with package overview, philosophy, and installation steps
 - [ ] Set up CI workflow (PHPUnit + static analysis) in GitHub Actions
 
 ## 2. Contracts & Pluggable Architecture
 - [x] Define `Item` and `Location` contracts (`src/Contracts/*`)
-- [ ] Implement `IsItem` and `IsLocation` helper traits (`src/Concerns/*`)
+- [x] Implement `IsItem` and `IsLocation` helper traits (`src/Concerns/*`)
 - [ ] Ensure all internal services use contracts for dependency injection
 
 ## 3. Data Layer & Default Models
 - [x] Create migrations for `items`, `locations`, `stocks`, and `stock_movements` tables
-- [ ] Scaffold default Eloquent models for all entities (`src/Models/*`)
-- [ ] Provide model factories for all default models (`database/factories/*`)
-- [ ] Ensure migrations and models use table names from the configuration file
+- [x] Scaffold default Eloquent models for all entities (`src/Models/*`)
+- [x] Provide model factories for all default models (`database/factories/*`)
+- [x] Ensure migrations and models use table names from the configuration file
 
 ## 4. Service Provider & Configuration
 - [x] Create publishable `inventory-management.php` config file with model and table name mappings

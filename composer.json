@@ -8,6 +8,18 @@
             "Azaharizaman\\LaravelInventoryManagement\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Azaharizaman\\LaravelInventoryManagement\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Azaharizaman\\LaravelInventoryManagement\\InventoryManagementServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "Azahari Zaman",
